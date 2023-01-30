@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+    <div id="button"> 
+        <button id="send">დაკლიკე და გაქრება</button>
+    </div>
+    </section>
+<section>
+    <div id="form">
+    <input id="text" type="number"/>
+    <button id="click" type="button"></button>
+    <p id="profit"></p>
+    </div>
+    </section>
+   
+</body>
+   <script>
+
+//1
+   const button= document.getElementById ('send');
+   send.style.width='400px';
+   send.style.height='200px';
+   send.style.backgroundColor='orange';
+   send.style.marginTop='100px';
+   send.style.marginLeft='500px';
+
+   button.addEventListener('click',()=> {
+    send.remove();
+   });
+//2
+   const img = document.createElement("img");
+   img.src = "https://i.ytimg.com/vi/VEx5hNYeZtY/hqdefault.jpg";
+   document.body.appendChild(img);
+   img.style.borderRadius='50px';
+   img.style.marginLeft='460px';
+   img.style.marginTop='50px';
+//3
+   const text = document.getElementById('text');
+   const profit = document.getElementById('profit');
+   const click = document.getElementById('click');
+   click.style.height='20px';
+   click.style.width='30px';
+   text.style.width='200px';
+   text.style.height='50px';
+   text.style.marginTop='200px';
+   text.style.marginLeft='600px';
+   profit.style.marginLeft='600px';
+
+   text.addEventListener('input',(e)=>{
+    let textValue=e.target.value
+    profit.textContent=textValue
+   })
+
+// 4 da 5 davaleba ver gavakete
+  
+
+
+  
+
+  
+    </script>
+</html>
